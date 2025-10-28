@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     vertical-align: middle;
 }
 
-.top-bar a i {
+.top-bar a i,
+.top-bar a span {
     font-size: 14px;
 }
 
@@ -133,7 +134,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     font-size: 16px;
     cursor: pointer;
     flex-shrink: 0;
-    width: 52px;
+    width: 50px;
 }
 
 .header-actions {
@@ -312,7 +313,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .hero-section .container {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
     align-items: stretch;
 }
@@ -329,7 +330,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     background-image: url('https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png');
     background-repeat: no-repeat;
     background-position: 110%;
-    background-size: 440px;
+    background-size: 520px;
 }
 
 .hero-main .promo-label {
@@ -387,7 +388,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .carousel-dots span.active {
-    background-color: #e61f5a;
+    background-color: rgb(180, 130, 0);
 }
 
 .hero-sidebar {
@@ -415,7 +416,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .hero-sub-box .text-content h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     color: #222;
     line-height: 1.2;
@@ -464,6 +465,6 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .feature-text p {
-    font-size: 13px;
+    font-size: 15px;
     color: #999;
 }
