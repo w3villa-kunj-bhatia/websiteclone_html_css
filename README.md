@@ -1,1 +1,1 @@
-# websiteclone_html_css
+# A website clone using HTML & CSS
