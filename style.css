@@ -325,12 +325,16 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     position: relative;
     min-height: 480px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-main .hero-text {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png');
-    background-repeat: no-repeat;
-    background-position: 110%;
-    background-size: 520px;
+    max-width: 50%;
 }
 
 .hero-main .promo-label {
@@ -363,11 +367,26 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     border-radius: 3px;
     font-size: 13px;
     align-self: flex-start;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .btn-learn-more:hover {
     background-color: #333;
     color: #fff;
+}
+
+.hero-main .hero-image {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-main .hero-image img {
+    width: 520px;
+    height: auto;
+    object-fit: contain;
 }
 
 .carousel-dots {
@@ -467,4 +486,60 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .feature-text p {
     font-size: 15px;
     color: #999;
+}
+
+@media (max-width: 992px) {
+    .hero-section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-main {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero-main .hero-text {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .hero-main .hero-image {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .hero-main .hero-image img {
+        width: 320px;
+    }
+
+    .carousel-dots {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 20px;
+    }
+
+    .hero-sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-sub-box {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .hero-main h2 {
+        font-size: 32px;
+    }
+
+    .hero-main .hero-image img {
+        width: 250px;
+    }
+
+    .hero-sub-box {
+        width: 100%;
+    }
 }
