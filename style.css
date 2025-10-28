@@ -1,8 +1,7 @@
-/* --- Global Resets & Body --- */
 body {
     margin: 0;
-    font-family: Arial, sans-serif; /* Simplified for consistency with image */
-    background-color: #f7f7f7; /* Lighter background for the entire body */
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
     color: #333;
     font-size: 14px;
 }
@@ -12,7 +11,6 @@ a { text-decoration: none; color: inherit; }
 ul { list-style: none; margin: 0; padding: 0; }
 h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
-/* --- Utility Container --- */
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -22,114 +20,105 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     align-items: center;
 }
 
-/* --- 1. Top Bar --- */
 .top-bar {
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
     font-size: 12px;
-    padding: 8px 0; /* Slightly less padding */
-    border-bottom: 1px solid #e0e0e0; /* Lighter border */
+    padding: 12px 0;
+    border-bottom: 1px solid #e0e0e0;
     color: #555;
 }
 
 .top-bar-left ul,
+.top-bar-center ul, 
 .top-bar-right ul {
     display: flex;
     gap: 20px;
 }
 
 .top-bar a {
-    display: flex; /* For icon alignment */
+    display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px;
     color: #555;
     transition: color 0.2s;
 }
 
 .top-bar a:hover {
-    color: #007bff; /* Standard blue hover */
+    color: #007bff;
 }
 
 .top-bar .dropdown-arrow::after {
     content: ' ▼';
-    font-size: 8px; /* Smaller arrow */
-    padding-left: 2px; /* Less padding */
+    font-size: 8px;
+    padding-left: 2px;
     vertical-align: middle;
 }
 
-/* Simulate icons with pseudo-elements for top bar */
-.top-bar a .icon-home::before { content: '🏠'; font-size: 14px; }
-.top-bar a .icon-about::before { content: 'ℹ️'; font-size: 14px; }
-.top-bar a .icon-contact::before { content: '✉️'; font-size: 14px; }
-.top-bar a .icon-faq::before { content: '❓'; font-size: 14px; }
-.top-bar a .icon-globe::before { content: '🇬🇧'; font-size: 14px; }
-.top-bar a .icon-dollar::before { content: '$'; font-size: 14px; }
-.top-bar a .icon-menu::before { content: '☰'; font-size: 14px; }
-.top-bar a .icon-delivery::before { content: '🚚'; font-size: 14px; }
+.top-bar a i {
+    font-size: 14px;
+}
 
-
-/* --- 2. Main Header --- */
 .main-header {
-    background-color: #f7f7f7; /* Light grey background */
-    padding: 20px 0; /* Adjusted padding */
+    background-color: #ffffff;
+    padding: 32px 0;
     border-bottom: 1px solid #e0e0e0;
 }
 
 .main-header .container {
-    gap: 25px; /* Increased gap */
+    gap: 25px;
 }
 
 .logo {
-    margin-right: 15px; /* Adjust spacing as in image */
+    margin-right: 15px;
 }
 
 .logo h1 {
-    font-family: 'Times New Roman', serif; /* Matching the stylized 'Journal' */
-    font-size: 40px; /* Larger font size */
-    font-weight: normal; /* Less bold, more refined */
-    letter-spacing: -2px; /* Tighter letter spacing */
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    font-weight: normal;
+    letter-spacing: -2px;
     color: #222;
 }
 .logo a {
     color: #222;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1); /* Slight shadow for depth */
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
-
 
 .search-bar {
     display: flex;
-    border: 1px solid #d0d0d0; /* Finer border */
-    border-radius: 3px; /* Slightly less rounded */
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
     overflow: hidden;
     flex-grow: 1;
-    max-width: 650px; /* Increased max-width */
-    height: 40px; /* Fixed height for search bar */
+    max-width: 650px;
+    height: 40px;
 }
 
 .search-bar select {
     border: none;
-    padding: 0 12px; /* Adjusted padding */
-    background-color: #e8e8e8; /* Lighter background for select */
-    color: #555;
+    padding: 0 12px;
+    background-color: #4a148c;
+    color: white;
     font-weight: normal;
-    border-right: 1px solid #d0d0d0;
+    border-right: 1px solid #3b0f70;
     cursor: pointer;
-    appearance: none; /* Remove default arrow */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23666666%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.6-6.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128.8%20128.8c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.6-6.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128.8%20128.8c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
     background-repeat: no-repeat;
     background-position: right 8px center;
     background-size: 8px;
-    width: 120px; /* Fixed width for 'All' select */
+    width: 52px;
     flex-shrink: 0;
 }
 
 .search-bar input {
     border: none;
-    padding: 10px 15px; /* Adjusted padding */
+    padding: 10px 15px;
     font-size: 14px;
     width: 100%;
-    color: #666; /* Placeholder color */
+    color: #666;
 }
 
 .search-bar input:focus {
@@ -138,108 +127,90 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .search-bar button {
     border: none;
-    background-color: #4a148c; /* Deeper purple */
+    background-color: #4a148c;
     color: white;
-    padding: 0 18px; /* Adjusted padding */
-    font-size: 18px;
+    padding: 0 18px;
+    font-size: 16px;
     cursor: pointer;
     flex-shrink: 0;
+    width: 52px;
 }
-.search-bar button::before {
-    content: '\1F50D'; /* Unicode magnifying glass */
-    font-size: 18px;
-}
-
 
 .header-actions {
     display: flex;
     align-items: center;
-    gap: 15px; /* Reduced gap */
+    gap: 15px;
 }
 
 .action-item {
     display: flex;
-    flex-direction: column; /* Stack text below icon */
+    flex-direction: column;
     align-items: center;
     text-align: center;
     font-size: 12px;
     color: #666;
-    gap: 3px; /* Space between icon and text */
-    padding: 0 5px; /* Small padding */
+    gap: 2px;
     transition: color 0.2s;
 }
 .action-item:hover {
-    color: #4a148c; /* Purple hover */
+    color: #4a148c;
 }
 
 .action-item i {
-    font-size: 20px; /* Icon size */
+    font-size: 20px;
     margin-bottom: 2px;
-    line-height: 1; /* Ensure icon doesn't add extra line height */
+    line-height: 1;
 }
 
-/* Simulate Font Awesome-like icons for header actions */
-.action-item .icon-user::before { content: '👤'; } /* User icon */
-.action-item .icon-heart::before { content: '🤍'; } /* Heart icon */
 .action-item span {
     display: block;
     line-height: 1.2;
-    white-space: nowrap; /* Keep text on one line if possible */
+    white-space: nowrap;
 }
 .action-item .action-label {
-    font-weight: normal; /* Lighter font weight */
+    font-weight: normal;
     font-size: 12px;
 }
 .action-item .action-sublabel {
-    font-size: 10px; /* Smaller sublabel */
+    font-size: 10px;
     color: #999;
 }
 
-
 .cart-button {
-    background-color: #4a148c; /* Purple background for cart */
+    background-color: #3366ff;
     color: white;
-    padding: 10px 18px; /* Adjusted padding */
-    border-radius: 3px; /* Slightly less rounded */
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row; /* Icon and text side-by-side */
     align-items: center;
-    gap: 8px; /* Space between icon and info */
-    margin-left: 15px; /* Push cart slightly right */
-    height: 40px; /* Match search bar height */
+    justify-content: center;
+    margin-left: 10px;
 }
 
 .cart-button:hover {
-    background-color: #3b0f70; /* Darker purple on hover */
+    background-color: #2952cc;
 }
 
-.cart-button .icon-cart::before {
-    content: '\1F6D2'; /* Unicode shopping cart */
-    font-size: 24px;
-}
-.cart-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Align text left within cart info */
-}
-.cart-info .cart-items {
-    font-weight: 500;
-    font-size: 13px;
-}
-.cart-info .cart-total {
-    font-size: 11px;
-    color: #e0e0e0; /* Lighter color for total */
+.cart-button i {
+    font-size: 20px;
 }
 
-/* --- 3. Main Navigation --- */
+.cart-details {
+    font-size: 14px;
+    color: #333;
+    margin-left: 15px;
+    white-space: nowrap;
+}
+
 .main-nav {
-    background-color: #4a148c; /* Deep purple for nav */
+    background-color: #4a148c;
     color: white;
-    height: 50px; /* Fixed height for nav bar */
+    height: 50px;
 }
 
 .main-nav .container {
-    height: 100%; /* Make container take full nav height */
+    height: 100%;
 }
 
 .nav-links {
@@ -248,56 +219,53 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .nav-links li a {
-    display: flex; /* For icon alignment */
+    display: flex;
     align-items: center;
-    padding: 0 20px; /* Padding for nav links */
+    padding: 0 20px;
     color: white;
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
     position: relative;
-    height: 100%; /* Fill parent height */
-    gap: 8px; /* Space for icon */
+    height: 100%;
+    gap: 8px;
 }
 
 .nav-links li a:hover {
-    background-color: rgba(0, 0, 0, 0.15); /* Darker hover */
+    background-color: rgba(0, 0, 0, 0.15);
 }
 
 .nav-links .all-departments {
-    background-color: #ffc107; /* Yellow for 'All Departments' */
+    background-color: #ffc107;
     color: #333;
-    font-weight: bold; /* Bolder text */
-    font-size: 14px; /* Slightly larger */
-    border-right: 1px solid rgba(0,0,0,0.1); /* Subtle separator */
+    font-weight: bold;
+    font-size: 14px;
+    border-right: 1px solid rgba(0,0,0,0.1);
 }
 .nav-links .all-departments:hover {
-     background-color: #e0a800; /* Darker yellow on hover */
+     background-color: #e0a800;
 }
-.nav-links .all-departments .icon-departments::before {
-    content: '☰'; /* Hamburger menu icon */
-    font-size: 18px;
+.nav-links .all-departments i {
+    font-size: 16px;
 }
 
-/* Sale/New Badges */
 .nav-links .sale-badge,
 .nav-links .new-badge {
     position: absolute;
-    top: -15px; /* Adjusted position */
-    right: 0px; /* Adjusted position */
-    background-color: #dc3545; /* Red for Sale */
+    top: -15px;
+    right: 0px;
+    background-color: #dc3545;
     color: white;
-    font-size: 9px;
+    font-size: 10px;
     font-weight: bold;
-    padding: 8px 10px; /* Adjusted padding */
+    padding: 4px 4px;
     text-transform: uppercase;
-    line-height: 1; /* Remove extra space */
+    line-height: 1;
 }
 .nav-links .new-badge {
-    background-color: #ffc107; /* Yellow for New */
-    color: #333; /* Darker text for yellow badge */
+    background-color: #ffc107;
+    color: #333;
 }
-
 
 .nav-right {
     display: flex;
@@ -308,41 +276,38 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .nav-right .phone-number {
     font-weight: 600;
-    font-size: 15px; /* Slightly larger font */
+    font-size: 15px;
     color: white;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space for icon */
+    gap: 8px;
 }
 .nav-right .phone-number:hover {
-    color: #ffc107; /* Yellow hover */
+    color: #ffc107;
 }
-.nav-right .phone-number .icon-phone::before {
-    content: '📞'; /* Phone icon */
-    font-size: 18px;
+.nav-right .phone-number i {
+    font-size: 16px;
 }
 
 .nav-right .blog-link {
-    background-color: #ffc107; /* Yellow for Blog */
+    background-color: #ffc107;
     color: #333;
     padding: 0 20px;
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
-    height: 100%; /* Fill parent height */
+    height: 100%;
     display: flex;
     align-items: center;
-    gap: 8px; /* Space for icon */
+    gap: 8px;
 }
 .nav-right .blog-link:hover {
-    background-color: #e0a800; /* Darker yellow on hover */
+    background-color: #e0a800;
 }
-.nav-right .blog-link .icon-blog::before {
-    content: '📝'; /* Blog/pencil icon */
-    font-size: 18px;
+.nav-right .blog-link i {
+    font-size: 16px;
 }
 
-/* --- 4. Hero Section (Not in the provided image, keeping previous styles) --- */
 .hero-section {
     padding: 25px 0;
 }
@@ -363,10 +328,10 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url('https://assets.codepen.io/10609351/phones.png');
+    background-image: url('https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png');
     background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: 500px;
+    background-position: 100% 100%;
+    background-size: 450px;
 }
 
 .hero-main .promo-label {
@@ -378,7 +343,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     padding: 10px;
     max-width: fit-content;
     background-color: blue;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 .hero-main h2 {
@@ -412,14 +377,15 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     left: 60px;
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .carousel-dots span {
     display: block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+    width: 25px;
+    height: 4px;
     background-color: #c4c4c4;
+    border-radius: 12px;
 }
 
 .carousel-dots span.active {
@@ -465,11 +431,10 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     margin-left: 15px;
 }
 
-
-/* --- 5. Features Bar (Not in the provided image, keeping previous styles) --- */
 .features-bar {
     padding: 30px 0;
     border-top: 1px solid #eaeaea;
+    background-color: #555;
 }
 
 .features-bar .container {
@@ -486,17 +451,19 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .feature-icon {
     font-size: 36px;
-    color: #2f2fd2;
+    color: rgb(180, 130, 0);
+    width: 50px;
+    text-align: center;
 }
 
 .feature-text h3 {
     font-size: 16px;
     font-weight: 600;
-    color: #222;
+    color: white;
     margin-bottom: 3px;
 }
 
 .feature-text p {
     font-size: 13px;
-    color: #777;
+    color: #999;
 }
