@@ -97,10 +97,10 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .search-bar select {
     border: none;
     padding: 0 12px;
-    background-color: #4a148c;
+    background-color: rgb(0, 45, 192);
     color: white;
     font-weight: normal;
-    border-right: 1px solid #3b0f70;
+    border-right: 1px solid rgb(0, 45, 192);
     cursor: pointer;
     appearance: none;
     -webkit-appearance: none;
@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .search-bar button {
     border: none;
-    background-color: #4a148c;
+    background-color: rgb(0, 45, 192);
     color: white;
     padding: 0 18px;
     font-size: 16px;
@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .cart-button {
-    background-color: #3366ff;
+    background-color: rgb(0, 45, 192);
     color: white;
     width: 45px;
     height: 45px;
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .main-nav {
-    background-color: #4a148c;
+    background-color: rgb(0, 45, 192);
     color: white;
     height: 48px;
 }
@@ -340,7 +340,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     margin-bottom: 10px;
     padding: 10px;
     max-width: fit-content;
-    background-color: blue;
+    background-color: rgb(0, 45, 192);
     border-radius: 8px;
 }
 
@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .hero-sub-box .text-content .label {
     font-size: 12px;
     font-weight: 600;
-    color: blue;
+    color: rgb(0, 45, 192);
     text-transform: uppercase;
     margin-bottom: 5px;
 }
@@ -430,7 +430,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .features-bar {
-    padding: 30px 0;
+    padding: 20px;
     border-top: 1px solid #eaeaea;
     background-color: #555;
 }
@@ -448,10 +448,12 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .feature-icon {
-    font-size: 36px;
+    font-size: 24px;
     color: rgb(180, 130, 0);
-    width: 50px;
     text-align: center;
+    border: blue 2px solid;
+    padding: 20px;
+    border-radius: 50%;
 }
 
 .feature-text h3 {
