@@ -60,7 +60,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 
 .main-header {
     background-color: #ffffff;
-    padding: 32px 0;
+    padding: 24px 0;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -73,9 +73,9 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .logo h1 {
-    font-family: 'Times New Roman', serif;
+    font-family: 'arial black', sans-serif;
     font-size: 40px;
-    font-weight: normal;
+    font-weight: bold;
     letter-spacing: -2px;
     color: #222;
 }
@@ -206,7 +206,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .main-nav {
     background-color: #4a148c;
     color: white;
-    height: 50px;
+    height: 48px;
 }
 
 .main-nav .container {
@@ -225,7 +225,6 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     color: white;
     font-weight: 600;
     font-size: 13px;
-    text-transform: uppercase;
     position: relative;
     height: 100%;
     gap: 8px;
@@ -241,6 +240,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     font-weight: bold;
     font-size: 14px;
     border-right: 1px solid rgba(0,0,0,0.1);
+    width: 240px;
 }
 .nav-links .all-departments:hover {
      background-color: #e0a800;
@@ -253,13 +253,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .nav-links .new-badge {
     position: absolute;
     top: -15px;
-    right: 0px;
+    right: 10px;
     background-color: #dc3545;
     color: white;
-    font-size: 10px;
-    font-weight: bold;
-    padding: 4px 4px;
-    text-transform: uppercase;
+    font-size: 12px;
+    padding: 6px 4px;
     line-height: 1;
 }
 .nav-links .new-badge {
@@ -295,7 +293,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     padding: 0 20px;
     font-weight: 600;
     font-size: 13px;
-    text-transform: uppercase;
+    text-transform: uppercase;  
     height: 100%;
     display: flex;
     align-items: center;
@@ -315,7 +313,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .hero-section .container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 25px;
+    gap: 20px;
     align-items: stretch;
 }
 
@@ -324,14 +322,14 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     border-radius: 5px;
     padding: 60px;
     position: relative;
-    min-height: 450px;
+    min-height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-image: url('https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png');
     background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 450px;
+    background-position: 110%;
+    background-size: 440px;
 }
 
 .hero-main .promo-label {
@@ -347,11 +345,11 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 }
 
 .hero-main h2 {
-    font-size: 48px;
+    font-size: 42px;
     font-weight: 800;
     color: #222;
     line-height: 1.1;
-    max-width: 400px;
+    max-width: 430px;
     margin-bottom: 30px;
 }
 
