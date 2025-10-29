@@ -100,18 +100,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
     padding: 0 12px;
     background-color: rgb(0, 45, 192);
     color: white;
-    font-weight: normal;
-    border-right: 1px solid rgb(0, 45, 192);
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.6-6.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128.8%20128.8c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
-    background-repeat: no-repeat;
-    background-position: right 8px center;
-    background-size: 8px;
-    width: 52px;
-    flex-shrink: 0;
+    font-size: 14px;
 }
 
 .search-bar input {
@@ -321,7 +310,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .hero-main {
     background-color: #f7f7f7;
     border-radius: 5px;
-    padding: 60px;
+    padding: 0 20px;
     position: relative;
     min-height: 480px;
     display: flex;
@@ -543,3 +532,161 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
         width: 100%;
     }
 }
+
+.buy-class {
+    text-align: center;
+    padding: 50px 0;    
+}
+
+.buy-class h1 {
+    font-size: 28px;
+    color: rgb(32, 32, 32);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.buy-class h4 {
+    font-size: 48px;
+    color: rgb(180, 130, 0);
+    margin-top: -44px;
+}
+
+.buy-class p {
+    font-size: 14px;
+    color: #797979;
+    margin-top: 15px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.buy-class a {
+        color: rgb(0, 45, 192);
+        text-decoration: underline;
+    }
+
+.categories {
+    font-size: 10px;
+    display: flex;
+    align-items: center;  
+    width: fit-content; 
+    margin: 20px auto; 
+    border-radius: 10px;
+    background-color: #dddddd;
+
+}
+
+.top-categories {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 0, 170);
+    color: white;
+    padding: 12px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+} 
+
+.electronics {
+    display: flex;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    color: rgb(94, 94, 94);
+    border-right: #acacac 1px solid;
+    padding: 12px;
+}
+
+.beauty {
+    display: flex;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    color: rgb(94, 94, 94);
+    border-right: #acacac 1px solid;
+    padding: 12px;
+}
+
+.fashion {
+    display: flex;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    color: rgb(94, 94, 94);
+    padding: 12px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.triangle-icon h1{
+    font-weight: 700;
+    display: flex;
+    align-items: center;  
+    width: fit-content; 
+    margin: -38px 512px; 
+    color: rgb(0, 0, 170);
+    font-size: 40px;
+}
+
+.categories-images {
+    display: flex;
+    align-items: center;  
+    width: fit-content; 
+    margin: auto; 
+}
+
+.categories-images img {
+    width: 240px;
+    height: 270px;
+    object-fit: cover;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 6px;
+}
+
+.text-block {
+  position: relative;
+  bottom: 50px;
+  padding: 4px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content; 
+}
+/* 
+.products-images {
+    display: flex;
+    align-items: center;  
+    width: fit-content; 
+    margin: auto;
+    background-color: #222;
+}
+
+.products-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+    margin-top: 50px;
+    border-radius: 6px;
+}
+
+.headphones-img-text-left {
+    text-decoration: underline;
+    color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    background-color: #999;
+    padding: 6px;
+}
+
+.headphones-img-text-right {
+    text-decoration: underline;
+    color: white;
+    margin-left: 240px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-top: -43px;
+    background-color: #999;
+    padding: 6px;    
+} */
