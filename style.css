@@ -536,6 +536,7 @@ h1, h2, h3, h4, h5, h6, p { margin: 0; }
 .buy-class {
     text-align: center;
     padding: 50px 0;    
+    background-color: rgb(245, 245, 245)
 }
 
 .buy-class h1 {
@@ -778,7 +779,7 @@ button {
     cursor: pointer;
 }
 
-.sale-badge {
+.sale-badge2 {
     position: relative;
     left: 236px;
     top: 8px;
@@ -797,7 +798,7 @@ button {
     background-color: yellow;
     border-radius: 4px;
     color: #222;
-    padding: 5px;
+    padding: 5px 6px;
     font-size: 12px;
     font-weight: bold
 }
@@ -844,7 +845,7 @@ button {
   position: absolute;
   top: 6px;      
   left: -38px;    
-  background-color: green;
+  background-color: rgb(0, 189, 0);
   color: white;
   font-weight: bold;
   padding: 5px 40px;
@@ -863,4 +864,108 @@ button {
     padding: 5px;
     font-size: 12px;
     font-weight: bold
+}
+
+.featured-category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  background-color: dodgerblue;
+}
+
+.featured-category-grid h4 {
+    font-size: 22px;
+    color: rgb(32, 32, 32);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.featured-category-grid p {
+    font-size: 16px;
+    color: #797979;
+    margin-top: 15px;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.fashion-div {
+    background-color: rgb(215, 215, 215);
+    padding: 15px;
+    margin: auto;
+}
+
+.fashion-div h4 {
+    font-size: 20px;
+    color: rgb(32, 32, 32);
+    font-weight: bold;
+}
+
+.fashion-div h5 {
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.fashion-div h2 {
+    font-size: 40px;
+    color: rgb(180, 130, 0);
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+.fashion-div img{
+    margin-top: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+}
+
+.fashion-div p{
+    text-decoration: underline;
+    color: blue;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.dress-div {
+    background-color: white;
+    padding: 40px;
+    border-radius: 6px;
+}
+
+.dress-div h5 {
+    font-size: 14px;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+}
+
+.dress-div h6 {
+    font-size: 14px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+}
+
+.dress-div img{
+    width: 250px;
+    height: 250px;
+}
+
+.dress-div h2 {
+    font-size: 40px;
+    color: rgb(180, 130, 0);
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+.dress-card {
+    border: #222 1px solid;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 5px;
 }
