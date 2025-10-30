@@ -865,11 +865,18 @@ button {
     font-size: 12px;
     font-weight: bold
 }
+.feature-bg{
+    background-color: rgb(245, 245, 245);
+    padding: 50px;   
+}
 
 .featured-category-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  background-color: dodgerblue;
+    display: grid;
+    grid-template-columns: 250px 1fr; 
+    gap: 20px;
+    padding: 0 15px;
+    background-color: white;
+
 }
 
 .featured-category-grid h4 {
@@ -893,6 +900,21 @@ button {
     background-color: rgb(215, 215, 215);
     padding: 15px;
     margin: auto;
+    margin-left: 0px;
+}
+
+.fashion-products-header h2 {
+    font-size: 40px;
+    color: rgb(180, 130, 0);
+    font-weight: bold;
+    margin-top: -40px;
+}
+
+.fashion-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 10px; 
 }
 
 .fashion-div h4 {
@@ -931,8 +953,9 @@ button {
 
 .dress-div {
     background-color: white;
-    padding: 40px;
+    padding: 5px;
     border-radius: 6px;
+    height: 100%;
 }
 
 .dress-div h5 {
@@ -952,8 +975,8 @@ button {
 }
 
 .dress-div img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .dress-div h2 {
@@ -964,8 +987,32 @@ button {
 }
 
 .dress-card {
-    border: #222 1px solid;
+    border: #acacac 1px solid;
     border-radius: 6px;
     margin-top: 10px;
     padding: 5px;
+}
+
+.carousel-dots3 {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.carousel-dots3 span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #c4c4c4;
+  border-radius: 50px;
+}
+
+.carousel-dots3 span.active {
+  background-color: rgb(140, 100, 0);
+}
+
+.fashion-products-wrapper{
+    margin-left: 20px;
+    margin-top: 10px;
 }
