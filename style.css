@@ -1309,7 +1309,6 @@ button {
   grid-template-rows: repeat(1, 1fr);
   gap: 12px;
   margin: 50px;
-  background-color: tomato;
 }
 
 .blog-card img {
@@ -1321,10 +1320,8 @@ button {
 }
 
 .card1 {
-  background-color: green;
   padding: 0px;
   text-align: center;
-  border: #222 1px solid;
   border-radius: 6px;
 }
 
@@ -1345,10 +1342,8 @@ button {
 }
 
 .card2 {
-  background-color: orange;
   padding: 0px;
   text-align: center;
-  border: #222 1px solid;
   border-radius: 6px;
 }
 
@@ -1369,10 +1364,8 @@ button {
 }
 
 .card3 {
-  background-color: yellow;
   padding: 0px;
   text-align: center;
-  border: #222 1px solid;
   border-radius: 6px;
 }
 
@@ -1397,4 +1390,265 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.carousel-dots5 {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: -10px;
+}
+
+.carousel-dots5 span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #c4c4c4;
+  border-radius: 50px;
+}
+
+.carousel-dots5 span.active {
+  background-color: rgb(140, 100, 0);
+}
+
+.about-us-grid {
+  background-color: rgb(245, 245, 245);
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 78px;
+}
+
+.about-us-grid i {
+  font-size: 44px;
+  color: orange;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.about-us {
+  text-align: center;
+  padding: 50px 0;
+  background-color: white;
+  margin-bottom: -30px;
+}
+
+.about-us h1 {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.about-us h4 {
+  font-size: 48px;
+  color: rgb(180, 130, 0);
+  margin-top: -44px;
+}
+
+.about-us p {
+  font-size: 16px;
+  color: #555;
+  font-weight: bold;
+  margin-top: 15px;
+  max-width: 950px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+.about1 h3 {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 100;
+}
+
+.most-viewed {
+  text-align: left;
+  padding: 50px;
+  background-color: #555;
+}
+
+.most-viewed h1 {
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+.most-viewed h4 {
+  font-size: 48px;
+  color: rgb(180, 130, 0);
+  margin-top: -44px;
+  margin-bottom: 15px;
+}
+
+.most-viewed-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 15px;
+}
+
+.view-prod-1 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+}
+
+.view-prod-1 img {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 10px;
+}
+
+.view-prod-1 h5 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.view-prod-1 p {
+  font-size: 14px;
+  font-weight: 200;
+  display: flex;
+}
+
+.view-prod-1 i {
+    justify-content: space-evenly;
+}
+
+.view-prod-2 {
+  background-color: white;
+  height: 80px;
+}
+
+.view-prod-3 {
+  background-color: white;
+  height: 80px;
+}
+
+.view-prod-4 {
+  background-color: white;
+  height: 80px;
+}
+
+.view-icons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.company-icons {
+  display: flex;                
+  justify-content: center;     
+  align-items: center;          
+  padding: 16px;    
+  column-gap: 50px;      
+  background-color: rgb(245, 245, 245);
+}
+
+.company-icons i {
+  font-size: 35px;
+  color: blue;
+}
+
+.footer-menu{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer-menu-1 {
+   border-right: rgb(200, 200, 200) 1px solid;
+  text-align: left;
+  padding: 50px;
+}
+
+.footer-menu-1 h1 {
+  font-size: 18px;
+  color: rgb(32, 32, 32);
+  font-weight: bold;
+}
+
+.footer-menu-1 h4 {
+  font-size: 48px;
+  color: rgb(180, 130, 0);
+  margin-top: -44px;
+  margin-bottom: 15px;
+}
+
+.footer-menu-1 p{
+    font-size: 16px;
+    margin-top: 8px;
+    color: blue;
+    font-weight: 100;
+}
+
+.newsletter h5 {
+    font-size: 16px;
+    font-weight: 100;
+    color: #666;
+}
+
+.email-box {
+  position: relative;
+  width: 300px;          
+}
+
+.email-box input {
+  width: 100%;
+  padding: 12px 90px 12px 15px;  
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+}
+
+.email-box button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-42%);
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.newsletter input {
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: #444;
+    color: rgb(205, 205, 205);
+    padding: 16px;
+    display: flex;
+    margin: auto;
+}
+
+.footer h3 {
+    margin-top: 5px;
+    justify-content: left;
+}
+
+.footer-icons{
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    margin-left: auto;
+    gap: 8px;
+}
+
+.footer-icons button {
+    font-size: 20px;
+    margin-top: -8px;
+    max-width: 80px;
+    max-height: 80px;
 }
