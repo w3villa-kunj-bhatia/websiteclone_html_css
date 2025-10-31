@@ -1,476 +1,794 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Journal Clone</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="top-bar">
-        <div class="container">
-            <div class="top-bar-left">
-                <ul>
-                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="#" class="dropdown-arrow"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                </ul>
-            </div>
-            
-            <div class="top-bar-center">
-                <ul>
-                    <li><a href="#" class="dropdown-arrow"><span>🇬🇧</span> English</a></li>
-                    <li><a href="#" class="dropdown-arrow"><i class="fas fa-dollar-sign"></i> US Dollar</a></li>
-                </ul>
-            </div>
-
-            <div class="top-bar-right">
-                <ul>
-                    <li><a href="#" class="dropdown-arrow"><i class="fas fa-bars"></i> More Menus</a></li>
-                    <li><a href="#"><i class="fas fa-truck"></i> Delivery</a></li>
-                </ul>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="container">
+        <div class="top-bar-left">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-info-circle"></i> About Us</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-arrow"
+                ><i class="fas fa-question-circle"></i> FAQ</a
+              >
+            </li>
+          </ul>
         </div>
-    </div>
-    
-    <header class="main-header">
-        <div class="container">
-            <div class="logo">
-                <h1><a href="#">JOURNAL</a></h1>
-            </div>
-            <div class="search-bar">
-                <select name="category" id="category">
-                    <option value="all">All</option>
-                </select>
-                <input type="text" placeholder="Search here...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-            </div>
 
-            <div class="header-actions">
-                <a href="#" class="action-item">
-                    <i class="fas fa-user"></i>
-                    <span>Login</span>
-                </a>
-                <a href="#" class="action-item">
-                    <i class="fas fa-edit"></i>
-                    <span>Register</span>
-                </a>
-                <a href="#" class="action-item">
-                    <i class="far fa-heart"></i>
-                    <span>Wishlist</span>
-                </a>
-                <a href="#" class="action-item">
-                    <i class="fas fa-exchange-alt"></i>
-                    <span>Compare</span>
-                </a>
-                
-                <div class="cart-details">
-                    <span>0 item(s) - $0.00</span>
-                </div>
-                
-                <a href="#" class="cart-button">
-                    <i class="fas fa-shopping-cart"></i>
-                    </a>
-            </div>
-            </div>
+        <div class="top-bar-center">
+          <ul>
+            <li>
+              <a href="#" class="dropdown-arrow"><span>🇬🇧</span> English</a>
+            </li>
+            <li>
+              <a href="#" class="dropdown-arrow"
+                ><i class="fas fa-dollar-sign"></i> US Dollar</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="top-bar-right">
+          <ul>
+            <li>
+              <a href="#" class="dropdown-arrow"
+                ><i class="fas fa-bars"></i> More Menus</a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-truck"></i> Delivery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <header class="main-header">
+      <div class="container">
+        <div class="logo">
+          <h1><a href="#">JOURNAL</a></h1>
+        </div>
+        <div class="search-bar">
+          <select name="category" id="category">
+            <option value="all">All</option>
+          </select>
+          <input type="text" placeholder="Search here..." />
+          <button type="submit"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="header-actions">
+          <a href="#" class="action-item">
+            <i class="fas fa-user"></i>
+            <span>Login</span>
+          </a>
+          <a href="#" class="action-item">
+            <i class="fas fa-edit"></i>
+            <span>Register</span>
+          </a>
+          <a href="#" class="action-item">
+            <i class="far fa-heart"></i>
+            <span>Wishlist</span>
+          </a>
+          <a href="#" class="action-item">
+            <i class="fas fa-exchange-alt"></i>
+            <span>Compare</span>
+          </a>
+
+          <div class="cart-details">
+            <span>0 item(s) - $0.00</span>
+          </div>
+
+          <a href="#" class="cart-button">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </div>
+      </div>
     </header>
 
     <nav class="main-nav">
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#" class="all-departments"><i class="fas fa-bars"></i><span class="sale-badge">Sale</span> ALL DEPARTMENTS</a></li>
-                <li><a href="#">MULTILEVEL</a></li>
-                <li><a href="#">MEGA MENU <span class="new-badge">New</span></a></li>
-                <li><a href="#">FULLWIDTH</a></li>
-            </ul>
-            <div class="nav-right">
-                <a href="#" class="phone-number"><i class="fa-solid fa-phone-volume"></i> 1.800.555.6789</a>
-                <a href="#" class="blog-link"><i class="fas fa-message"></i> BLOG</a>
-            </div>
+      <div class="container">
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="all-departments"
+              ><i class="fas fa-bars"></i
+              ><span class="sale-badge">Sale</span> ALL DEPARTMENTS</a
+            >
+          </li>
+          <li><a href="#">MULTILEVEL</a></li>
+          <li>
+            <a href="#">MEGA MENU <span class="new-badge">New</span></a>
+          </li>
+          <li><a href="#">FULLWIDTH</a></li>
+        </ul>
+        <div class="nav-right">
+          <a href="#" class="phone-number"
+            ><i class="fa-solid fa-phone-volume"></i> 1.800.555.6789</a
+          >
+          <a href="#" class="blog-link"><i class="fas fa-message"></i> BLOG</a>
         </div>
+      </div>
     </nav>
 
-   <section class="hero-section">
-    <div class="container">
+    <section class="hero-section">
+      <div class="container">
         <div class="hero-main">
-            <div class="hero-text">
-                <span class="promo-label">MOBILE</span>
-                <h2>Best mobile options at any resolution</h2>
-                <a href="#" class="btn-learn-more">LEARN MORE <i class="fa-solid fa-arrow-right"></i></a>
-                <div class="carousel-dots">
-                    <span></span>
-                    <span class="active"></span>
-                    <span></span>
-                </div>
+          <div class="hero-text">
+            <span class="promo-label">MOBILE</span>
+            <h2>Best mobile options at any resolution</h2>
+            <a href="#" class="btn-learn-more"
+              >LEARN MORE <i class="fa-solid fa-arrow-right"></i
+            ></a>
+            <div class="carousel-dots">
+              <span></span>
+              <span class="active"></span>
+              <span></span>
             </div>
-            <div class="hero-image">
-                <img src="https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png" alt="Mobile Product">
-            </div>
+          </div>
+          <div class="hero-image">
+            <img
+              src="https://www.journal-theme.com/1/catalog/view/theme/journal3/image.php/e5d94db3608ece76.webp/500-500/catalog/journal3/assets/demos/1/v1/Hero/3.png"
+              alt="Mobile Product"
+            />
+          </div>
         </div>
-        
+
         <div class="hero-sidebar">
-            <div class="hero-sub-box watch-box">
-                <div class="text-content">
-                    <span class="label">WEARABLES</span>
-                    <h3>Intelligent & Durable Design</h3>
-                </div>
-                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MYG03ref_FV98_VW_34FR+watch-case-44-aluminum-midnight-nc-se3_VW_34FR+watch-face-44-aluminum-midnight-se3_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80" alt="Smart Watch">
+          <div class="hero-sub-box watch-box">
+            <div class="text-content">
+              <span class="label">WEARABLES</span>
+              <h3>Intelligent & Durable Design</h3>
             </div>
-            <div class="hero-sub-box pc-box">
-                <div class="text-content">
-                    <span class="label">COMPUTERS</span>
-                    <h3>Build your own high powered PC</h3>
-                </div>
-                <img src="https://rukminim2.flixcart.com/image/480/640/xif0q/allinone-desktop/o/1/5/-original-imaguw4jdguzakhb.jpeg?q=90" alt="Desktop PC">
+            <img
+              src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MYG03ref_FV98_VW_34FR+watch-case-44-aluminum-midnight-nc-se3_VW_34FR+watch-face-44-aluminum-midnight-se3_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80"
+              alt="Smart Watch"
+            />
+          </div>
+          <div class="hero-sub-box pc-box">
+            <div class="text-content">
+              <span class="label">COMPUTERS</span>
+              <h3>Build your own high powered PC</h3>
             </div>
+            <img
+              src="https://rukminim2.flixcart.com/image/480/640/xif0q/allinone-desktop/o/1/5/-original-imaguw4jdguzakhb.jpeg?q=90"
+              alt="Desktop PC"
+            />
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <footer class="features-bar">
-        <div class="container">
-            <div class="feature-item">
-                <i class="fas fa-shipping-fast feature-icon"></i>
-                <div class="feature-text">
-                    <h3>Free Shipping</h3>
-                    <p>Free delivery over $100</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-undo-alt feature-icon"></i>
-                <div class="feature-text">
-                    <h3>Free Returns</h3>
-                    <p>Hassle free returns</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-shield feature-icon"></i>
-                <div class="feature-text">
-                    <h3>Secure Shopping</h3>
-                    <p>Best security features</p>
-                </div>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-cube feature-icon"></i>
-                <div class="feature-text">
-                    <h3>Unlimited Blocks</h3>
-                    <p>Any content, any page</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="feature-item">
+          <i class="fas fa-shipping-fast feature-icon"></i>
+          <div class="feature-text">
+            <h3>Free Shipping</h3>
+            <p>Free delivery over $100</p>
+          </div>
         </div>
+        <div class="feature-item">
+          <i class="fas fa-undo-alt feature-icon"></i>
+          <div class="feature-text">
+            <h3>Free Returns</h3>
+            <p>Hassle free returns</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-shield feature-icon"></i>
+          <div class="feature-text">
+            <h3>Secure Shopping</h3>
+            <p>Best security features</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-cube feature-icon"></i>
+          <div class="feature-text">
+            <h3>Unlimited Blocks</h3>
+            <p>Any content, any page</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <div class="buy-class">
-        <h1>Why buy from us?</h1>
-        <h4>_</h4>
-        <p>Journal has been the best selling and most loved Opencart theme since first launch in 2013. Tried and tested by over 20k people, Journal is the best Opencart theme framework on the market today. 
-        <a href="https://www.google.com">Learn More</a></p>
+      <h1>Why buy from us?</h1>
+      <h4>_</h4>
+      <p>
+        Journal has been the best selling and most loved Opencart theme since
+        first launch in 2013. Tried and tested by over 20k people, Journal is
+        the best Opencart theme framework on the market today.
+        <a href="https://www.google.com">Learn More</a>
+      </p>
     </div>
 
     <div class="categories">
-        <div class="top-categories">
-            <h2>TOP CATEGORIES</h2>
-        </div>
-        <div class="electronics">
-            <h2>ELECTRONICS</h2>
-        </div>
-        <div class="beauty">
-            <h2>BEAUTY</h2>
-        </div>
-        <div class="fashion">
-            <h2>FASHION</h2>
-        </div>
+      <div class="top-categories">
+        <h2>TOP CATEGORIES</h2>
+      </div>
+      <div class="electronics">
+        <h2>ELECTRONICS</h2>
+      </div>
+      <div class="beauty">
+        <h2>BEAUTY</h2>
+      </div>
+      <div class="fashion">
+        <h2>FASHION</h2>
+      </div>
     </div>
     <div class="triangle-icon">
-            <h1><i class="fa-solid fa-caret-down"></i></h1>
+      <h1><i class="fa-solid fa-caret-down"></i></h1>
     </div>
 
     <div class="categories-images">
+      <div class="fashion-img">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUa57wGGT71haKuwELbw9NZQaCAA6cRzmug&s"
+        />
+        <div class="text-block"><h4>FASHION</h4></div>
+      </div>
+      <div class="bags">
+        <img
+          src="https://i.etsystatic.com/18005829/r/il/8e6348/3178789597/il_fullxfull.3178789597_32o6.jpg"
+        />
+        <div class="text-block"><h4>BAGS</h4></div>
+      </div>
+      <div class="health-beauty">
+        <img
+          src="https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg"
+        />
+        <div class="text-block"><h4>HEALTH & BEAUTY</h4></div>
+      </div>
+      <div class="footwear">
+        <img
+          src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/25bf48d1-6ad9-40e6-9692-d9766213d30e/here-s-how-to-find-the-best-shoes-for-wide-feet.jpg"
+        />
+        <div class="text-block"><h4>FOOTWEAR</h4></div>
+      </div>
+      <div class="home-decor">
+        <img
+          src="https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?cs=srgb&dl=pexels-sammsara-luxury-modern-home-372468-1099816.jpg&fm=jpg"
+        />
+        <div class="text-block"><h4>HOME DECOR</h4></div>
+      </div>
+    </div>
 
-    <div class="fashion-img">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzUa57wGGT71haKuwELbw9NZQaCAA6cRzmug&s">
-            <div class="text-block"><h4>FASHION</h4></div>
-    </div>
-    <div class="bags">
-        <img src="https://i.etsystatic.com/18005829/r/il/8e6348/3178789597/il_fullxfull.3178789597_32o6.jpg">
-                <div class="text-block"><h4>BAGS</h4></div>
-    </div>
-    <div class="health-beauty">
-        <img src="https://static.independent.co.uk/2022/04/21/21/health%20and%20beauty.jpg">
-                <div class="text-block"><h4>HEALTH & BEAUTY</h4></div>
-    </div>
-    <div class="footwear">
-        <img src="https://static.nike.com/a/images/f_auto,cs_srgb/w_960,c_limit/25bf48d1-6ad9-40e6-9692-d9766213d30e/here-s-how-to-find-the-best-shoes-for-wide-feet.jpg">
-                <div class="text-block"><h4>FOOTWEAR</h4></div>
-    </div>
-    <div class="home-decor">
-        <img src="https://images.pexels.com/photos/1099816/pexels-photo-1099816.jpeg?cs=srgb&dl=pexels-sammsara-luxury-modern-home-372468-1099816.jpg&fm=jpg">
-                <div class="text-block"><h4>HOME DECOR</h4></div>
+    <div class="buy-class">
+      <h1>Featured Products</h1>
+      <h4>_</h4>
+      <p>
+        Display any products as tabs or accordians with optional grid or
+        carousel mode. Custom products per row per module and per breakpoint.
+        Each module can display products in either grid or list view with
+        different styles per module.
+      </p>
     </div>
 
-    </div>
-
-     <div class="buy-class">
-        <h1>Featured Products</h1>
-        <h4>_</h4>
-        <p>Display any products as tabs or accordians with optional grid or carousel mode. Custom products per row per module and per breakpoint. Each module can display products in either grid or list view with different styles per module.</p>
-    </div>
-
-     <div class="categories">
-        <div class="top-categories">
-            <h2>FEATURED</h2>
-        </div>
-        <div class="electronics">
-            <h2>LATEST</h2>
-        </div>
-        <div class="beauty">
-            <h2>BESTSELLERS</h2>
-        </div>
-        <div class="fashion">
-            <h2>SPECIAL</h2>
-        </div>
+    <div class="categories">
+      <div class="top-categories">
+        <h2>FEATURED</h2>
+      </div>
+      <div class="electronics">
+        <h2>LATEST</h2>
+      </div>
+      <div class="beauty">
+        <h2>BESTSELLERS</h2>
+      </div>
+      <div class="fashion">
+        <h2>SPECIAL</h2>
+      </div>
     </div>
     <div class="triangle-icon">
-            <h1><i class="fa-solid fa-caret-down"></i></h1>
+      <h1><i class="fa-solid fa-caret-down"></i></h1>
     </div>
-
 
     <div>
-
-<div class="prod-container">
-
+      <div class="prod-container">
         <div class="product-card">
-            <span class="sale-badge2">-70%</span>
-            <span class="hot-badge">HOT</span>
-            <span class="custom-badge">CUSTOM LABELS</span>
-            <img src="https://m.media-amazon.com/images/I/51aXvjzcukL.jpg">
-            <div class="info-block">
-                    <div class="brand">
-                        <span class="brand-underline">Sony</span>
-                        <span>Model XMR100</span>
-                    </div>
-                <h3 class="title">Headphones</h3>
-                <div class="price">$199.00 <del>$300.00</del>
-                    <div>
-                    <input type="number" id="quantity" value="1" min="0" max="100">                 
-                    <button>ADD TO CART</button>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-right-left"></i>  
-                    </div>
-                   <div class="buy-faq">
-                        <div class="buy-item">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="faq-item">
-                            <i class="fa-solid fa-circle-question"></i>
-                            <span>Question</span>
-                        </div>
-                        </div>
-                </div>
+          <span class="sale-badge2">-70%</span>
+          <span class="hot-badge">HOT</span>
+          <span class="custom-badge">CUSTOM LABELS</span>
+          <img src="https://m.media-amazon.com/images/I/51aXvjzcukL.jpg" />
+          <div class="info-block">
+            <div class="brand">
+              <span class="brand-underline">Sony</span>
+              <span>Model XMR100</span>
             </div>
-        </div>
-        
-        <div class="product-card">
-                <span class="preorder-badge">2 - 3 DAYS</span>
-                <span class="topbrand-badge">TOP BRAND</span>
-            <img src="https://img.tatacliq.com/images/i9/437Wx649H/MP000000016417721_437Wx649H_202302061850441.jpeg">
-            <div class="info-block">
-                <div class="brand">
-                    <span class="brand-underline">Adidas</span>
-                    <span> Model Sambas</span>
-                </div>
-                <h3 class="title">Men's Sneaker Shoes</h3>
-                <div class="price">$129.00
-                    <div>
-                    <input type="number" id="quantity" value="1" min="0" max="100">                 
-                    <button>ADD TO CART</button>
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-right-left"></i>
-                    <div class="buy-faq">
-                        <div class="buy-item">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="faq-item">
-                            <i class="fa-solid fa-circle-question"></i>
-                            <span>Question</span>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    
-        <div class="product-card">
-                        <span class="free-badge">FREE</span>
-                        <span class="preorder-badge">PRE-ORDER</span>
-            <img src="https://media.power-cdn.net/images/h-0f8dba26cc63da0e7a1a2790e900820e/products/3393362/3393362_6_600x600_w_g.webp">
-            <div class="info-block">
-                <div class="brand">
-                    <span class="brand-underline">Samsung</span>
-                    <span>Model Bravia 4k</span>
-                </div>
-                <h3 class="title">Samsung 4k Smart TV</h3>
-                <div class="price">$1499.00
-                    <div>
-                    <input type="number" id="quantity" value="1" min="0" max="100">                 
-                    <button>ADD TO CART</button>  
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-right-left"></i>  
-                    <div class="buy-faq">
-                        <div class="buy-item">
-                            <i class="fa-solid fa-dollar-sign"></i>
-                            <span>Buy Now</span>
-                        </div>
-                        <div class="faq-item">
-                            <i class="fa-solid fa-circle-question"></i>
-                            <span>Question</span>
-                        </div>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="product-card">
-            <span class="hot-badge-cam">HOT</span>
-            <span class="preorder-badge">PRE-ORDER</span>
-            <img src="https://sharpi.in/wp-content/uploads/2022/05/1624972877_1649280.jpg">
-            <div class="info-block">
-                <div class="brand">
-                    <span class="brand-underline">Nikon</span>
-                    <span>Model DSLR248</span>
-                </div>
-                <h3 class="title">Nikon DSLR Camera</h3>
-                <div class="price">$799.00
-                    <div>
-                    <input type="number" id="quantity" value="1" min="0" max="100">                 
-                    <button>ADD TO CART</button> 
-                    <i class="fa-solid fa-heart"></i>
-                    <i class="fa-solid fa-right-left"></i>  
-                    <div class="buy-faq">
+            <h3 class="title">Headphones</h3>
+            <div class="price">
+              $199.00 <del>$300.00</del>
+              <div>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="0"
+                  max="100"
+                />
+                <button>ADD TO CART</button>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-right-left"></i>
+              </div>
+              <div class="buy-faq">
                 <div class="buy-item">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                    <span>Buy Now</span>
+                  <i class="fa-solid fa-dollar-sign"></i>
+                  <span>Buy Now</span>
                 </div>
                 <div class="faq-item">
+                  <i class="fa-solid fa-circle-question"></i>
+                  <span>Question</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="preorder-badge">2 - 3 DAYS</span>
+          <span class="topbrand-badge">TOP BRAND</span>
+          <img
+            src="https://img.tatacliq.com/images/i9/437Wx649H/MP000000016417721_437Wx649H_202302061850441.jpeg"
+          />
+          <div class="info-block">
+            <div class="brand">
+              <span class="brand-underline">Adidas</span>
+              <span> Model Sambas</span>
+            </div>
+            <h3 class="title">Men's Sneaker Shoes</h3>
+            <div class="price">
+              $129.00
+              <div>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="0"
+                  max="100"
+                />
+                <button>ADD TO CART</button>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="buy-faq">
+                  <div class="buy-item">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Buy Now</span>
+                  </div>
+                  <div class="faq-item">
                     <i class="fa-solid fa-circle-question"></i>
                     <span>Question</span>
+                  </div>
                 </div>
-                </div> 
-                    </div>  
-                </div>
+              </div>
             </div>
+          </div>
         </div>
-        
+
+        <div class="product-card">
+          <span class="free-badge">FREE</span>
+          <span class="preorder-badge">PRE-ORDER</span>
+          <img
+            src="https://media.power-cdn.net/images/h-0f8dba26cc63da0e7a1a2790e900820e/products/3393362/3393362_6_600x600_w_g.webp"
+          />
+          <div class="info-block">
+            <div class="brand">
+              <span class="brand-underline">Samsung</span>
+              <span>Model Bravia 4k</span>
+            </div>
+            <h3 class="title">Samsung 4k Smart TV</h3>
+            <div class="price">
+              $1499.00
+              <div>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="0"
+                  max="100"
+                />
+                <button>ADD TO CART</button>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="buy-faq">
+                  <div class="buy-item">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Buy Now</span>
+                  </div>
+                  <div class="faq-item">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Question</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="hot-badge-cam">HOT</span>
+          <span class="preorder-badge">PRE-ORDER</span>
+          <img
+            src="https://sharpi.in/wp-content/uploads/2022/05/1624972877_1649280.jpg"
+          />
+          <div class="info-block">
+            <div class="brand">
+              <span class="brand-underline">Nikon</span>
+              <span>Model DSLR248</span>
+            </div>
+            <h3 class="title">Nikon DSLR Camera</h3>
+            <div class="price">
+              $799.00
+              <div>
+                <input
+                  type="number"
+                  id="quantity"
+                  value="1"
+                  min="0"
+                  max="100"
+                />
+                <button>ADD TO CART</button>
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="buy-faq">
+                  <div class="buy-item">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Buy Now</span>
+                  </div>
+                  <div class="faq-item">
+                    <i class="fa-solid fa-circle-question"></i>
+                    <span>Question</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots2">
+        <span class="active"></span>
+        <span></span>
+      </div>
     </div>
-    <div class="carousel-dots2">
-                    <span class="active"></span>
-                    <span></span>
-    </div>
-    </div>
-    <button class="see-all-button">SEE ALL PRODUCTS <i class="fa-solid fa-arrow-right"></i></button>
-    </div>
-     <div class="buy-class">
-        <h1>Featured Category</h1>
-        <h4>_</h4>
-        <p>Easily create category based modules and display products from specific categories or brands only. The advanced page builder allows you to create any grid layout with full control at any breakpoint.</p>
+    <button class="see-all-button">
+      SEE ALL PRODUCTS <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <div class="buy-class">
+      <h1>Featured Category</h1>
+      <h4>_</h4>
+      <p>
+        Easily create category based modules and display products from specific
+        categories or brands only. The advanced page builder allows you to
+        create any grid layout with full control at any breakpoint.
+      </p>
     </div>
     <div class="feature-bg">
-    <div class="featured-category-grid">
-
-    <div class="fashion-div">
-        <h4>Fashion</h4>
-        <h2>___</h2>
-        <img src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/Old_Money_Outfits_Men_Blue_Shirt_2_480x480.webp?v=1743491913">
-        <h5>Accessories</h5>
-        <h5>Dresses</h5>
-        <h5>Pants</h5>
-        <h5>T-Shirts</h5>
-        <p>See all in Fashion</p>
-    </div>
-
-    <div class="fashion-products-wrapper">
-        
-        <div class="fashion-products-header">
-            <h4>New in Fashion</h4>
-            <h2>___</h2>
+      <div class="featured-category-grid">
+        <div class="fashion-div">
+          <h4>Fashion</h4>
+          <h2>___</h2>
+          <img
+            src="https://cdn.shopify.com/s/files/1/0639/1237/8602/files/Old_Money_Outfits_Men_Blue_Shirt_2_480x480.webp?v=1743491913"
+          />
+          <h5>Accessories</h5>
+          <h5>Dresses</h5>
+          <h5>Pants</h5>
+          <h5>T-Shirts</h5>
+          <p>See all in Fashion</p>
         </div>
 
-        <div class="fashion-products-grid">
-            
+        <div class="fashion-products-wrapper">
+          <div class="fashion-products-header">
+            <h4>New in Fashion</h4>
+            <h2>___</h2>
+          </div>
+
+          <div class="fashion-products-grid">
             <div class="dress-div">
-                <div class="dress-card">
-                    <img src="https://www.ordinaree.com/cdn/shop/files/DSC_8696.jpg?v=1756703522">
-                    <h5>Bodycorn Dress</h5>
-                    <h6>$399.00</h6>
-                    <hr>
-                    <div class="featured-cart">
-                        <button>ADD TO CART</button>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-right-left"></i>
-                    </div>
+              <div class="dress-card">
+                <div class="image-wrapper">
+                  <img
+                    src="https://www.ordinaree.com/cdn/shop/files/DSC_8696.jpg?v=1756703522"
+                  />
+                  <span class="preorder-badge2">2 - 3 DAYS</span>
+                  <span class="new-badge2">NEW</span>
                 </div>
+
+                <h5>Bodycorn Dress</h5>
+                <h6>$399.00</h6>
+                <hr />
+                <div class="featured-cart">
+                  <button>ADD TO CART</button>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
             </div>
 
             <div class="dress-div">
-                <div class="dress-card">
-                    <img src="https://m.media-amazon.com/images/I/61xgXT-TCEL._AC_UY1100_.jpg">
-                    <h5>Black Dress</h5>
-                    <h6>$249.00</h6>
-                    <hr>
-                    <div class="featured-cart">
-                        <button>ADD TO CART</button>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-right-left"></i>
-                    </div>
+              <div class="dress-card">
+                <img
+                  src="https://m.media-amazon.com/images/I/61xgXT-TCEL._AC_UY1100_.jpg"
+                />
+                <span class="hot-badge2">NEW</span>
+                <span class="hot-badge3">HOT</span>
+                <h5>Black Dress</h5>
+                <h6>$249.00</h6>
+                <hr />
+                <div class="featured-cart">
+                  <button>ADD TO CART</button>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
                 </div>
+              </div>
             </div>
 
             <div class="dress-div">
-                <div class="dress-card">
-                    <img src="https://thehouseofrare.com/cdn/shop/files/CONG-IWHITE__CONG-IWHITE_05900_b79c17d8-34d6-4df0-8962-e7beb3d2b63b.webp?v=1743583584">
-                    <h5>Turtleneck Sweater</h5>
-                    <h6>$99.00</h6>
-                    <hr>
-                    <div class="featured-cart">
-                        <button>ADD TO CART</button>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-right-left"></i>
-                    </div>
+              <div class="dress-card">
+                <img
+                  src="https://thehouseofrare.com/cdn/shop/files/CONG-IWHITE__CONG-IWHITE_05900_b79c17d8-34d6-4df0-8962-e7beb3d2b63b.webp?v=1743583584"
+                />
+                <span class="hot-badge4">TOP BRAND</span>
+                <span class="hot-badge5">NEW</span>
+                <span class="hot-badge6">HOT</span>
+                <h5>Turtleneck Sweater</h5>
+                <h6>$99.00</h6>
+                <hr />
+                <div class="featured-cart">
+                  <button>ADD TO CART</button>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
                 </div>
-            </div>
-            
-            <div class="dress-div">
-                <div class="dress-card">
-                    <img src="https://minkstreet.in/cdn/shop/files/sdfsdfsd.jpg?v=1726693575">
-                    <h5>Black Vintage T-Shirt</h5>
-                    <h6>$39.00</h6>
-                    <hr>
-                    <div class="featured-cart">
-                        <button>ADD TO CART</button>
-                        <i class="fa-solid fa-heart"></i>
-                        <i class="fa-solid fa-right-left"></i>
-                    </div>
-                </div>
+              </div>
             </div>
 
-        </div> 
-        <div class="carousel-dots3">
+            <div class="dress-div">
+              <div class="dress-card">
+                <img
+                  src="https://minkstreet.in/cdn/shop/files/sdfsdfsd.jpg?v=1726693575"
+                />
+                <span class="hot-badge4">TOP BRAND</span>
+                <span class="hot-badge5">NEW</span>
+                <span class="hot-badge6">HOT</span>
+                <h5>Black Vintage T-Shirt</h5>
+                <h6>$39.00</h6>
+                <hr />
+                <div class="featured-cart">
+                  <button>ADD TO CART</button>
+                  <i class="fa-solid fa-heart"></i>
+                  <i class="fa-solid fa-right-left"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots3">
             <span class="active"></span>
             <span></span>
-    </div></div> </div> </div>
-        
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</body>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="by-brand">
+      <h1>Shop By Brand</h1>
+      <h4>__</h4>
+      <div class="brands-img">
+        <span
+          ><img
+            src="https://images.seeklogo.com/logo-png/17/2/scuderia-ferrari-logo-png_seeklogo-176442.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://brandlogos.net/wp-content/uploads/2022/10/haas_f1_team-logo_brandlogos.net_dwxn5-512x512.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://images.seeklogo.com/logo-png/40/1/red-bull-racing-f1-logo-png_seeklogo-406796.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://brandlogos.net/wp-content/uploads/2022/07/mercedes-amg_petronas_f1-logo_brandlogos.net_lq7eb.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://images.seeklogo.com/logo-png/23/2/aston-martin-logo-png_seeklogo-238549.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://brandlogos.net/wp-content/uploads/2024/03/williams_racing-logo_brandlogos.net_2y1xy.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Logo_of_Stake_F1_Team_Kick_Sauber.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://images.seeklogo.com/logo-png/42/1/mclaren-formula-1-team-logo-png_seeklogo-425651.png"
+        /></span>
+
+        <span
+          ><img
+            src="https://images.seeklogo.com/logo-png/48/2/bwt-alpine-f1-team-logo-png_seeklogo-485700.png"
+        /></span>
+      </div>
+      <div class="carousel-dots4">
+        <span class="active"></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="gallery-module">
+      <h1>Improved Gallery Module</h1>
+      <h4>__</h4>
+      <p>
+        The gallery module supports images, videos can also act as banners that
+        can point to any other page or open other popup modules. Create
+        different modules with images, videos, banners or a combination of all.
+        Add your modules on any page in any grid format
+      </p>
+      <div class="gallery-img">
+        <span
+          ><img
+            src="https://vastphotos.com/files/uploads/photos/11458/beautiful-square-waterfall-photo-l.jpg?v=20230418124056"
+        /></span>
+
+        <span
+          ><img
+            src="https://vastphotos.com/files/uploads/photos/10357/dubai-uae-skyline-photo-l.jpg?v=20220712043521"
+        /></span>
+
+        <span
+          ><img
+            src="https://thumbs.dreamstime.com/b/ocean-coastal-cliffs-landscape-21867786.jpg"
+        /></span>
+
+        <span
+          ><img
+            src="https://media.istockphoto.com/id/485775244/photo/sunset-over-lake.jpg?s=612x612&w=0&k=20&c=6S9qw-RxHneZUKnlYbcCwvSi6yrgLLpzuUGZ125Mg_4="
+        /></span>
+
+        <span
+          ><img
+            src="https://thumbs.dreamstime.com/b/romantic-scenery-starnberg-lake-sunset-boardwalk-52409506.jpg"
+        /></span>
+
+        <span
+          ><img
+            src="https://i.pinimg.com/236x/3e/6d/d4/3e6dd434bdb0922a64e61543d619a65c.jpg"
+        /></span>
+
+        <span
+          ><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyaYHCDbFGXmbjY_ZcJ4G86mfMg8fhIALsjD2WiYtlgmixcLczE7Tdqb1cI-EXwkc116o&usqp=CAU"
+        /></span>
+
+        <span
+          ><img
+            src="https://st.focusedcollection.com/9264440/i/650/focused_194914796-stock-photo-scenic-view-small-waterfalls-isle.jpg"
+        /></span>
+
+        <span
+          ><img
+            src="https://bellahomeco.com.au/cdn/shop/products/8_ca3e0aa7-02ac-40fd-9ec6-c66e04866e07.jpg?v=1676465631&width=1445"
+        /></span>
+      </div>
+    </div>
+
+    <div class="blog-module">
+      <div class="blog-module">
+        <h1>From our Blog</h1>
+        <h4>__</h4>
+        <p>
+          Journal comes with its own simple yet powerful blog. With the new
+          advanced typography styles your post page design will be unmatched.
+        </p>
+      </div>
+    </div>
+    <div class="categories">
+      <div class="top-categories">
+        <h2>LATEST POST</h2>
+      </div>
+      <div class="most-read">
+        <h2>MOST READ</h2>
+      </div>
+    </div>
+
+    <div class="triangle-icon2">
+      <h1><i class="fa-solid fa-caret-down"></i></h1>
+    </div>
+
+    <div class="blog-cards">
+      <div class="blog-card">
+        <div class="card1">
+          <img
+            src="https://images.unsplash.com/photo-1594434533760-02e0f3faaa68?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29uJTIwd2l0aCUyMGhlYWRwaG9uZXN8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000"
+          />
+          <h3>Journal Blog is Here</h3>
+          <p>
+            The journal 3 blog has been greatly improved and it now comes with
+            the most advanced set of typography tools, including custom drop-cap
+            support as well as optional newspaper like fluid columns. You can
+            break up the page in up to 4 columns and change the configuration
+            per breakpoint for the best article layout on any screen width. The
+            Journal blog i...
+          </p>
+          <div class="read-more">
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="card2">
+          <img
+            src="https://images.pexels.com/photos/6324378/pexels-photo-6324378.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          />
+          <h3>The Ultimate Guide to Smartphone Photography</h3>
+          <p>
+            Best Opencart theme options you can find in any theme? Decide for
+            yourself by visiting one of our demos admin, user/pass: demo/demo.
+            The journal 3 blog has been greatly improved and it now comes with
+            the most advanced set of typography tools, including custom drop-cap
+            support as well as optional newspaper-like fluid columns. You can
+            break up the page i...
+          </p>
+          <div class="read-more">
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <div class="card3">
+          <img
+            src="https://images.pexels.com/photos/4161283/pexels-photo-4161283.jpeg"
+          />
+          <h3>Top 5 Wearable Tech Trends in 2024</h3>
+          <p>
+            Another blog post. Write unlimited blog articles, or have someone
+            write them for you with partial admin access. The journal 3 blog has
+            been greatly improved and now it comes with the most advanced set of
+            typography tools, including custom drop-cap support as well as
+            optional newspaper-like fluid columns. You can break up the page in
+            up to 4 columns...
+          </p>
+          <div class="read-more">
+            <span>Read More <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
 </html>
